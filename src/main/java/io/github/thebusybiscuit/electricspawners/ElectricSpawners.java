@@ -35,7 +35,7 @@ public class ElectricSpawners extends JavaPlugin implements Listener, SlimefunAd
             }
         }
 
-        Category category = new Category(new NamespacedKey(this, "electric_spawners"), new CustomItem(SkullItem.fromHash("db6bd9727abb55d5415265789d4f2984781a343c68dcaf57f554a5e9aa1cd"), "&9Electric Spawners"));
+        Category category = new Category(new NamespacedKey(this, "electric_spawners"), new CustomItem(SkullItem.fromHash("db6bd9727abb55d5415265789d4f2984781a343c68dcaf57f554a5e9aa1cd"), "&9電力生怪磚"));
         Research research = new Research(new NamespacedKey(this, "electric_spawners"), 4820, "Powered Spawners", 30);
 
         for (String mob : cfg.getStringList("mobs")) {
