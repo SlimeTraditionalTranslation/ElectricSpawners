@@ -14,8 +14,6 @@ import me.mrCookieSlime.Slimefun.Objects.Category;
 import me.mrCookieSlime.Slimefun.cscorelib2.config.Config;
 import me.mrCookieSlime.Slimefun.cscorelib2.item.CustomItem;
 import me.mrCookieSlime.Slimefun.cscorelib2.skull.SkullItem;
-import me.mrCookieSlime.Slimefun.cscorelib2.updater.GitHubBuildsUpdater;
-import me.mrCookieSlime.Slimefun.cscorelib2.updater.Updater;
 
 public class ElectricSpawners extends JavaPlugin implements Listener, SlimefunAddon {
 
@@ -25,15 +23,6 @@ public class ElectricSpawners extends JavaPlugin implements Listener, SlimefunAd
 
         // Setting up bStats
         new Metrics(this, 6163);
-
-        if (getDescription().getVersion().startsWith("DEV - ")) {
-            Updater updater = new GitHubBuildsUpdater(this, getFile(), "TheBusyBiscuit/ElectricSpawners/master");
-
-            // Only run the Updater if it has not been disabled
-            if (cfg.getBoolean("options.auto-update")) {
-                updater.start();
-            }
-        }
 
         Category category = new Category(new NamespacedKey(this, "electric_spawners"), new CustomItem(SkullItem.fromHash("db6bd9727abb55d5415265789d4f2984781a343c68dcaf57f554a5e9aa1cd"), "&9電力生怪磚"));
         Research research = new Research(new NamespacedKey(this, "electric_spawners"), 4820, "頭顱生怪磚?", 30);
@@ -61,6 +50,6 @@ public class ElectricSpawners extends JavaPlugin implements Listener, SlimefunAd
 
     @Override
     public String getBugTrackerURL() {
-        return "https://github.com/TheBusyBiscuit/ElectricSpawners/issues";
+        return "https://github.com/xMikux/ElectricSpawners/issues";
     }
 }
