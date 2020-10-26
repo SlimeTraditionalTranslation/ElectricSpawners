@@ -2,7 +2,7 @@ package io.github.thebusybiscuit.electricspawners;
 
 import java.util.logging.Level;
 
-import org.bstats.bukkit.Metrics;
+//import org.bstats.bukkit.Metrics;
 import org.bukkit.NamespacedKey;
 import org.bukkit.entity.EntityType;
 import org.bukkit.event.Listener;
@@ -22,7 +22,7 @@ public class ElectricSpawners extends JavaPlugin implements Listener, SlimefunAd
         Config cfg = new Config(this);
 
         // Setting up bStats
-        new Metrics(this, 6163);
+        //new Metrics(this, 6163);
 
         Category category = new Category(new NamespacedKey(this, "electric_spawners"), new CustomItem(SkullItem.fromHash("db6bd9727abb55d5415265789d4f2984781a343c68dcaf57f554a5e9aa1cd"), "&9電力生怪磚"));
         Research research = new Research(new NamespacedKey(this, "electric_spawners"), 4820, "頭顱生怪磚?", 30);

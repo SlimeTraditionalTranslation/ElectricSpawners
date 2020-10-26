@@ -4,7 +4,8 @@
 可讓你的損壞生怪磚變成電力生怪磚.<br>
 電力生怪磚與普通的生怪磚運作方式相似,但他是使用電力來生怪,而且也不需要玩家在附近.
 
-[官方原碼連結](https://github.com/TheBusyBiscuit/ElectricSpawners)
+此為**非官方**版本, 請勿在該作者的問題追蹤內回報!
+[原作者連結](https://github.com/TheBusyBiscuit/ElectricSpawners)
 
 ## 下載電力生怪磚
 繁體翻譯版: [構建頁面](https://xmikux.github.io/builds/xMikux/ElectricSpawners/master)<br>
