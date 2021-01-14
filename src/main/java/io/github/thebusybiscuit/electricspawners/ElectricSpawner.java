@@ -43,7 +43,7 @@ public class ElectricSpawner extends SimpleSlimefunItem<BlockTicker> implements 
 
         addItemHandler(onBlockPlace());
 
-        new BlockMenuPreset(getID(), "&c電力生怪磚") {
+        new BlockMenuPreset(getId(), "&c電力生怪磚") {
 
             @Override
             public void init() {
@@ -63,8 +63,7 @@ public class ElectricSpawner extends SimpleSlimefunItem<BlockTicker> implements 
                         newInstance(menu, b);
                         return false;
                     });
-                }
-                else {
+                } else {
                     menu.replaceExistingItem(4, new CustomItem(Material.REDSTONE, "&7已啟用: &2\u2714", "", "&e> 點擊關閉此機器"));
                     menu.addMenuClickHandler(4, (p, slot, item, action) -> {
                         BlockStorage.addBlockInfo(b, "enabled", "false");
