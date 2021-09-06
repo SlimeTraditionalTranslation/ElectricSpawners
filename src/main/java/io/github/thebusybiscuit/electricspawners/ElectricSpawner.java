@@ -75,7 +75,7 @@ public class ElectricSpawner extends SimpleSlimefunItem<BlockTicker> implements 
                         return false;
                     });
                 } else {
-                    menu.replaceExistingItem(4, new CustomItemStack(Material.REDSTONE, "&7已啟用: &2\u2714", "", "&e> 點擊啟用此機器"));
+                    menu.replaceExistingItem(4, new CustomItemStack(Material.REDSTONE, "&7已啟用: &2\u2714", "", "&e> 點擊關閉此機器"));
                     menu.addMenuClickHandler(4, (p, slot, item, action) -> {
                         BlockStorage.addBlockInfo(b, "enabled", "false");
                         newInstance(menu, b);
